@@ -42,4 +42,13 @@ public class Mesa {
     public Long getId() {
         return id;
     }
+
+    public void reservar(String reservadoPara) {
+        this.status = OCUPADO;
+        this.reservadoPara = reservadoPara;
+    }
+
+    public StatusOcupacao getStatus() {
+        return status;
+    }
 }
